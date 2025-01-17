@@ -1,0 +1,22 @@
+project/
+├── project/
+│   ├── __pycache__
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+├── chatbot/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── views.py
+│   ├── templates/          # HTML files go here
+│   │   └── chatbot/
+│   │       └── index.html  # Your main frontend HTML file
+│   ├── static/             # Static assets go here
+│   │   ├── chatbot/
+│   │   │   ├── styles.css  # Your CSS file
+│   │   │   ├── script.js   # Your JavaScript file
