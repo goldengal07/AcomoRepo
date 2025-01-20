@@ -13,10 +13,13 @@ project/
 │   ├── models.py
 │   ├── tests.py
 │   ├── views.py
-│   ├── templates/          # HTML files go here
+│   ├── templates/
 │   │   └── chatbot/
-│   │       └── index.html  # Your main frontend HTML file
-│   ├── static/             # Static assets go here
+│   │       └── index.html
+│   ├── static/
 │   │   ├── chatbot/
-│   │   │   ├── styles.css  # Your CSS file
-│   │   │   ├── script.js   # Your JavaScript file
+│   │   │   ├── styles.css
+│   │   │   ├── script.js
+├── db.sqlite3          # database
+├── listing_query.sql   # query
+├── manage.py
