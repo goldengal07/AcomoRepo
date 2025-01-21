@@ -1,7 +1,11 @@
 from django.http import JsonResponse
 from .models import Listing
+from django.shortcuts import render
 
 #   VIEWS
+def chatbot_view(request):
+    return render(request, 'chatbot/index.html')
+
 def get_listings(request):
     query = request.GET.get('query')
     if 'under' in query and 'in' in query:

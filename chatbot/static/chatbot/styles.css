@@ -1,28 +1,45 @@
 body {
-    background-color: black;
-    color: white;
-  }
-  #chatbox {
-    background-color: gray;
-    width: 90%;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  #input-bar {
-    display: flex;
-    align-items: center;
-  }
-  button {
-    margin: 5px;
-    background-color: #555;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #777;
-  }
-  
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.chatbox {
+  background-color: gray;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+}
+.prompt-buttons {
+  margin-right: 10px;
+}
+button {
+  margin: 2px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}

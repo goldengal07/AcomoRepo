@@ -32,4 +32,4 @@ function displayListings(listings) {
         messages.appendChild(message);
     }
 }
-
+                
