@@ -15,3 +15,19 @@ def get_listings(request):
             return JsonResponse({'error': 'Invalid query structure.'})
     return JsonResponse({'error': 'Invalid query format.'})
 
+def find_room(request):
+    price_limit = request.GET.get('price', 850)
+    mrt_station = request.GET.get('mrt', 'Yew Tee')
+    listings = Listing.objects.filter(price__lt=price_limit, mrt_station=mrt_station)
+    
+    data = [
+        {
+            'name': listing.name,
+            'price': listing.price,
+            'type': listing.type,
+            'size': listing.size,
+        }
+        for listing in listings
+    ]
+    
+    return JsonResponse(data, safe=False)

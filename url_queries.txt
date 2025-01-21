@@ -1,0 +1,1 @@
+http://127.0.0.1:8000/chatbot/get-listings/?query=find%20a%20room%20under%202000%20in%20Queenstown
